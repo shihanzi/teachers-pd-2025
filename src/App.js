@@ -3,8 +3,6 @@ import Speakers from "./components/Speakers";
 import { Facebook, Youtube, MessageCircle } from "lucide-react";
 import DarkModeToggle from "./components/DarkModeToggle";
 
-
-
 function App() {
 
   const eventDate = new Date("2025-11-05T09:00:00");
