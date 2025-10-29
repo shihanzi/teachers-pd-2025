@@ -1,7 +1,6 @@
 import Countdown from "./components/Countdown";
 import Speakers from "./components/Speakers";
 import { Facebook, Youtube, MessageCircle } from "lucide-react";
-import { useState, useEffect } from "react";
 import DarkModeToggle from "./components/DarkModeToggle";
 
 
