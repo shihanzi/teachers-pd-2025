@@ -1,10 +1,33 @@
+import qirath from "../assets/speakers/qirath.jpg";
 import rahman from "../assets/speakers/rahman.jpg";
-import asra from "../assets/speakers/asra.jpg";
+import asra from "../assets/speakers/asra.jpeg";
 import firshad from "../assets/speakers/firshad.jpg";
 import thawseef from "../assets/speakers/thawseef.jpg";
 import shihan from "../assets/speakers/Shihan.jpg";
+import stagetv from "../assets/speakers/stage.png";
 
 const speakers = [
+  {
+    name: "Student",
+    qualifications: "(Grade 11)",
+    title: "கிராத்",
+    time: "9:00 AM - 09:05 AM",
+    photo: qirath,
+  },
+  {
+    name: "செயலாளர் ",
+    qualifications: "Secretary Ahadiyya Schools Federation",
+    title: "வரவேற்பு உரை",
+    time: "9:05 AM - 09:15 AM",
+    photo: qirath,
+  },
+  {
+    name: "President",
+    qualifications: "President Ahadiyya Schools Federation",
+    title: "அஹாதியா ஓர் அறிமுகம்",
+    time: "9:15 AM - 09:30 AM",
+    photo: qirath,
+  },
   {
     name: "Abdur Rahman",
     qualifications: "(MBA)",
@@ -37,8 +60,36 @@ const speakers = [
     name: "Shihan Mohamed",
     qualifications: "B.Eng (Hons) Software Engineering",
     title: "தொழில்நுட்பத்தின் வழியில் இஸ்லாம்",
-    time: "1:00 PM - 2:00 PM",
+    time: "1:15 PM - 2:30 PM",
     photo: shihan,
+  },
+  {
+    name: "Teacher's Q&A Session",
+    qualifications: "",
+    title: "Open Discussion",
+    time: "2:30 PM - 3:00 PM",
+    photo: stagetv,
+  },
+   {
+    name: "Award Ceremony",
+    qualifications: "",
+    title: "Recognition of Outstanding Teachers",
+    time: "3:00 PM - 4:00 PM",
+    photo: stagetv,
+  },
+  {
+    name: "Stage tv எதிர்பார்ப்பது என்ன?",
+    qualifications: "Rimas",
+    title: "Coordinator Stage tv",
+    time: "4:00 PM - 4:15 PM",
+    photo: stagetv,
+  },
+  {
+    name: "நன்றி உரை",
+    qualifications: "Kabeer",
+    title: "Coordinator Stage tv",
+    time: "4:15 PM - 4:30 PM",
+    photo: stagetv,
   },
 ];
 
