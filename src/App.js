@@ -2,8 +2,17 @@ import Countdown from "./components/Countdown";
 import Speakers from "./components/Speakers";
 import { Facebook, Youtube, MessageCircle } from "lucide-react";
 import DarkModeToggle from "./components/DarkModeToggle";
+import React, { useState, useEffect } from "react";
+
 
 function App() {
+
+  const [showNotice, setShowNotice] = useState(false);
+
+useEffect(() => {
+  const timer = setTimeout(() => setShowNotice(true), 5000);
+  return () => clearTimeout(timer);
+}, []);
 
   const eventDate = new Date("2025-11-05T09:00:00");
   return (
@@ -84,6 +93,23 @@ function App() {
           </div>
         </div>
       </div>
+      {showNotice && (
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50">
+    <div className="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-6 max-w-md text-center relative">
+      <p className="text-lg mb-4">
+        ⚠️ This event is not open to the public.
+        <br />
+        Participation is limited to Ahadiyya (Daham) School staff only.
+      </p>
+      <button
+        onClick={() => setShowNotice(false)}
+        className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow"
+      >
+        OK, Got it
+      </button>
+    </div>
+  </div>
+)}
     </div>
   );
 }
