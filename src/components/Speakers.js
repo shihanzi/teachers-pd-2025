@@ -5,6 +5,8 @@ import firshad from "../assets/speakers/firshad.jpg";
 import thawseef from "../assets/speakers/thawseef.jpg";
 import shihan from "../assets/speakers/Shihan.jpg";
 import stagetv from "../assets/speakers/stage.png";
+import kabeer from "../assets/speakers/kabeer.jpg";
+import rimas from "../assets/speakers/rimas.jpg";
 
 const speakers = [
   {
@@ -82,14 +84,14 @@ const speakers = [
     qualifications: "Rimas",
     title: "Coordinator Stage tv",
     time: "4:00 PM - 4:15 PM",
-    photo: stagetv,
+    photo: rimas,
   },
   {
     name: "நன்றி உரை",
     qualifications: "Kabeer",
     title: "Coordinator Stage tv",
     time: "4:15 PM - 4:30 PM",
-    photo: stagetv,
+    photo: kabeer,
   },
 ];
 
